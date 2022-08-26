@@ -6,7 +6,7 @@ export function middleware(req: NextRequest) {
     console.log("middleware file")
     console.log({ req: req.nextUrl })
   
-
+    return NextResponse.next(); 
 }
 
 // See "Matching Paths" below to learn more
